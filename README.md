@@ -1,4 +1,4 @@
-[![Nuxt Server Utils](.github/nuxt-server-utils.png)](https://nuxt-server-utils.jahid.dev/)
+[![Nuxt Server Utils](.github/nuxt-server-utils.png)](https://nuxt-server-utils.henrijskons.eu/)
 
 # 🛠️ Nuxt Server Utils
 
