@@ -1,9 +1,12 @@
 {
-  "name": "nuxt-server-utils",
-  "version": "0.0.7",
+  "name": "@lauvz/nuxt-server-utils",
+  "version": "0.0.8",
   "description": "A collection of utility functions for Nuxt server.",
-  "repository": "https://github.com/jahidanowar/nuxt-server-utils",
-  "homepage": "https://nuxt-server-utils.jahid.dev/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LAUVz/nuxt-server-utils.git"
+  },
+  "homepage": "https://nuxt-server-utils.henrijskons.eu/",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -29,21 +32,35 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.5.2"
+    "@nuxt/kit": "^3.5.2",
+    "@nuxtjs/plausible": "^1.0.2"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@nuxt/eslint-config": "^0.1.1",
-    "@nuxt/module-builder": "^0.4.0",
+    "@nuxt/eslint-config": "^0.5.2",
+    "@nuxt/module-builder": "^0.8.3",
     "@nuxt/schema": "^3.5.2",
     "@nuxt/test-utils": "^3.5.1",
-    "@types/node": "^18",
+    "@types/node": "^22.5.0",
     "changelogen": "^0.5.3",
-    "eslint": "^8.42.0",
+    "eslint": "^8.56.0",
     "h3": "^1.7.0",
-    "mongoose": "^7.3.1",
+    "mongoose": "^8.5.4",
     "nuxt": "^3.5.1",
-    "vitest": "^0.31.4",
+    "vitest": "^2.0.5",
     "zod": "^3.21.4"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "keywords": [
+    "nuxt",
+    "mongodb",
+    "server"
+  ],
+  "author": "Henrijs Kons",
+  "bugs": {
+    "url": "https://github.com/LAUVz/nuxt-server-utils/issues"
   }
 }

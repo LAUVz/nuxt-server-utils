@@ -57,20 +57,20 @@ A collection of utility functions for Nuxt API development.
 
 ```bash
 # Using pnpm
-pnpm add -D nuxt-server-utils
+pnpm add -D @lauvz/nuxt-server-utils
 
 # Using yarn
-yarn add --dev nuxt-server-utils
+yarn add --dev @lauvz/nuxt-server-utils
 
 # Using npm
-npm install --save-dev nuxt-server-utils
+npm install --save-dev @lauvz/nuxt-server-utils
 ```
 
-2. Add `nuxt-server-utils` to the `modules` section of `nuxt.config.ts`
+2. Add `@lauvz/nuxt-server-utils` to the `modules` section of `nuxt.config.ts`
 
 ```js
 export default defineNuxtConfig({
-  modules: ["nuxt-server-utils"],
+  modules: ["@lauvz/nuxt-server-utils"],
 });
 ```
 
