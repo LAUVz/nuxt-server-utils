@@ -53,7 +53,7 @@ A collection of utility functions for Nuxt API development.
 
 ## Quick Setup
 
-1. Add `nuxt-server-utils` dependency to your project
+1. Add `@lauvz/nuxt-server-utils` dependency to your project
 
 ```bash
 # Using pnpm
