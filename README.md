@@ -2,6 +2,8 @@
 
 # 🛠️ Nuxt Server Utils
 
+This is an updated for of https://github.com/jahidanowar/nuxt-server-utils
+
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
