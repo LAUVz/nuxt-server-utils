@@ -11,8 +11,8 @@
 A collection of utility functions for Nuxt API development.
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
-- [🏀 Online playground](https://stackblitz.com/edit/nuxt-server-utils?file=nuxt.config.ts)
-- [📖 &nbsp;Documentation](https://nuxt-server-utils.jahid.dev)
+- [🏀 Online playground](https://stackblitz.com/edit/lauvz-nuxt-server-utils?file=nuxt.config.ts)
+- [📖 &nbsp;Documentation](https://nuxt-server-utils.henrijskons.eu)
 
 ## Features
 

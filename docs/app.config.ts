@@ -3,16 +3,16 @@ export default defineAppConfig({
     title: "Nuxt Server Utils",
     description: "A collection of utility functions for Nuxt API development.",
     image:
-      "https://raw.githubusercontent.com/jahidanowar/nuxt-server-utils/main/.github/nuxt-server-utils.png",
+      "https://raw.githubusercontent.com/LAUVz/nuxt-server-utils/main/.github/nuxt-server-utils.png",
     socials: {
-      twitter: "jahiddev",
-      github: "jahidanowar/nuxt-server-utils",
+      twitter: "LAUVz",
+      github: "LAUVz/nuxt-server-utils",
     },
     github: {
       dir: "docs/content",
       branch: "main",
       repo: "nuxt-server-utils",
-      owner: "jahidanowar",
+      owner: "LAUVz",
       edit: true,
     },
     aside: {
@@ -33,7 +33,7 @@ export default defineAppConfig({
     footer: {
       iconLinks: [
         {
-          href: "https://jahid.dev",
+          href: "https://henrijskons.eu",
           icon: "solar:user-bold-duotone",
         },
       ],
