@@ -6,7 +6,7 @@
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
-[![Netlify Status](https://api.netlify.com/api/v1/badges/cf64cdd8-0813-4467-9652-011df41eeadd/deploy-status)](https://app.netlify.com/sites/nuxt-server-utils/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3000cacf-99d5-444f-a147-4bd7794a295b/deploy-status)](https://app.netlify.com/sites/lauvz-nuxt-server-utils/deploys)
 
 A collection of utility functions for Nuxt API development.
 
@@ -104,11 +104,11 @@ npm run release
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/nuxt-server-utils/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-version-href]: https://npmjs.com/package/nuxt-server-utils
-[npm-downloads-src]: https://img.shields.io/npm/dm/nuxt-server-utils.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-downloads-href]: https://npmjs.com/package/nuxt-server-utils
-[license-src]: https://img.shields.io/npm/l/nuxt-server-utils.svg?style=flat&colorA=18181B&colorB=28CF8D
-[license-href]: https://npmjs.com/package/nuxt-server-utils
+[npm-version-src]: https://img.shields.io/npm/v/@lauvz/nuxt-server-utils/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-version-href]: https://npmjs.com/package/@lauvz/nuxt-server-utils
+[npm-downloads-src]: https://img.shields.io/npm/dm/@lauvz/nuxt-server-utils.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-downloads-href]: https://npmjs.com/package/@lauvz/nuxt-server-utils
+[license-src]: https://img.shields.io/npm/l/@lauvz/nuxt-server-utils.svg?style=flat&colorA=18181B&colorB=28CF8D
+[license-href]: https://npmjs.com/package/@lauvz/nuxt-server-utils
 [nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
 [nuxt-href]: https://nuxt.com
