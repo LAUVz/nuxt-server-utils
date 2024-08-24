@@ -11,7 +11,7 @@ const DOCUMENTATION_URL = "https://nuxt-server-utils.jahid.dev/";
 // Module options TypeScript interface definition
 export interface ModuleOptions {
   enabled: boolean;
-  mongodbUri?: string;
+  mongodbURL?: string;
   enableDevTools?: boolean;
 }
 
@@ -23,7 +23,7 @@ export default defineNuxtModule<ModuleOptions>({
   // Default configuration options of the Nuxt module
   defaults: {
     enabled: true,
-    mongodbUri: process.env.MONGODB_URI || undefined,
+    mongodbURL: process.env.MONGODB_URL || undefined,
     enableDevTools: true,
   },
   setup(options, nuxt) {
@@ -34,9 +34,9 @@ export default defineNuxtModule<ModuleOptions>({
     const resolver = createResolver(import.meta.url);
     const runtimeConfig = nuxt.options.runtimeConfig;
 
-    // Expose MongoDB URI to runtimeConfig
+    // Expose MongoDB URL to runtimeConfig
     runtimeConfig.nuxtServerUtils = defu(runtimeConfig.nuxtServerUtils || {}, {
-      mongodbUri: options.mongodbUri,
+      mongodbURL: options.mongodbURL,
     });
 
     // Add utils to nitro config
@@ -106,7 +106,7 @@ export default defineNuxtModule<ModuleOptions>({
     });
 
     // Add server plugin
-    if (options.mongodbUri) {
+    if (options.mongodbURL) {
       addServerPlugin(resolver.resolve("./runtime/server/plugins/mongoose"));
     }
 

@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   modules: ["../src/module"],
   nuxtServerUtils: {
-    mongodbUri: process.env.MONGODB_URI,
+    mongodbURL: process.env.MONGODB_URL,
   },
   devtools: { enabled: true },
 });

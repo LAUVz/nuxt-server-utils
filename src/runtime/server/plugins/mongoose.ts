@@ -12,14 +12,14 @@ function defineNitroPlugin(def: NitroAppPlugin): NitroAppPlugin {
 export default defineNitroPlugin(async () => {
   const config = useRuntimeConfig();
 
-  if (!config.nuxtServerUtils?.mongodbUri) {
+  if (!config.nuxtServerUtils?.mongodbURL) {
     console.warn(
-      "Mongodb URI not found in runtime config, skipping mongodb connection"
+      "Mongodb URL not found in runtime config, skipping mongodb connection"
     );
     return;
   }
   try {
-    await mongoose.connect(config.nuxtServerUtils.mongodbUri);
+    await mongoose.connect(config.nuxtServerUtils.mongodbURL);
     console.info("Mongodb connected");
   } catch (e) {
     console.error("Mongodb connection error: ", e);
