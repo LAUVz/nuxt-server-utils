@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.0.8
+
+[compare changes](https://github.com/LAUVz/nuxt-server-utils/compare/v0.0.9...v0.0.8)
+
 ## v0.0.9
 
 
