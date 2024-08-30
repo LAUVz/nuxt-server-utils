@@ -1,6 +1,5 @@
 import type { NitroApp } from "nitropack";
 import mongoose from "mongoose";
-//@ts-ignore
 import { useRuntimeConfig } from "#imports";
 
 type NitroAppPlugin = (nitro: NitroApp) => void;
@@ -14,14 +13,15 @@ export default defineNitroPlugin(async () => {
 
   if (!config.nuxtServerUtils?.mongodbURL) {
     console.warn(
-      "Mongodb URL not found in runtime config, skipping mongodb connection"
+      "MongoDB URL not found in runtime config, skipping MongoDB connection"
     );
     return;
   }
+
   try {
     await mongoose.connect(config.nuxtServerUtils.mongodbURL);
-    console.info("Mongodb connected");
+    console.info("MongoDB connected");
   } catch (e) {
-    console.error("Mongodb connection error: ", e);
+    console.error("MongoDB connection error: ", e);
   }
 });

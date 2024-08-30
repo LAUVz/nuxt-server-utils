@@ -56,7 +56,7 @@ export default defineNuxtModule<ModuleOptions>({
       );
     });
 
-    // Create vierual types
+    // Create virtual types
     addTemplate({
       filename: "./types/nuxt-server-utils.d.ts",
       getContents: () =>
@@ -70,9 +70,9 @@ export default defineNuxtModule<ModuleOptions>({
         const validateSchema: typeof import("${resolver.resolve(
           "./runtime/server/utils"
         )}").validateSchema;
-        const indexRecourceHelper: typeof import("${resolver.resolve(
+        const indexResourceHelper: typeof import("${resolver.resolve(
           "./runtime/server/utils"
-        )}").indexRecourceHelper;
+        )}").indexResourceHelper;
         const showResourceHelper: typeof import("${resolver.resolve(
           "./runtime/server/utils"
         )}").showResourceHelper;
@@ -114,7 +114,7 @@ export default defineNuxtModule<ModuleOptions>({
     if (options.enableDevTools) {
       nuxt.hook("devtools:customTabs", (iframeTabs) => {
         iframeTabs.push({
-          name: "nuxr-server-utils",
+          name: "nuxt-server-utils",
           title: "Nuxt Server Utils",
           icon: "solar:settings-minimalistic-bold-duotone",
           view: {

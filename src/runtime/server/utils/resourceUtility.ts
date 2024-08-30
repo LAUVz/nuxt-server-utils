@@ -9,7 +9,7 @@ import {
 import { Model, PopulateOptions } from "mongoose";
 import { APIFeatures } from "./apiFeatures";
 
-export interface indexRecourceHelperOptions<T> {
+export interface indexResourceHelperOptions<T> {
   model: Model<T>;
   related?: PopulateOptions[] | ((event: H3Event) => PopulateOptions[]);
   beforeFnHook?: (event: H3Event) => void;
@@ -23,15 +23,15 @@ export interface indexRecourceHelperOptions<T> {
  * @deprecated since version 0.0.6
  * REST API helper function to get all documents from a collection
  * @template T - The type of data being indexed.
- * @param {indexRecourceHelperOptions<T>} options - Options for indexing.
+ * @param {indexResourceHelperOptions<T>} options - Options for indexing.
  * @param {Model<T>} options.model - The model used for indexing.
  * @param {PopulateOptions[] | ((event: H3Event) => PopulateOptions[])} [options.related] - Options for populating related data or a function that returns options based on an event.
  * @param {(event: H3Event) => void} [options.beforeFnHook] - Hook function to be executed before indexing.
  * @param {(event: H3Event, response: { totalPage: number; totalRecords: number; records: T[] }) => void} [options.afterFnHook] - Hook function to be executed after indexing, receives the event and the indexing response.
  * @returns void
  */
-export const indexRecourceHelper = <T>(
-  options: indexRecourceHelperOptions<T>
+export const indexResourceHelper = <T>(
+  options: indexResourceHelperOptions<T>
 ) => {
   return async (event: H3Event) => {
     const { model, related, beforeFnHook, afterFnHook } = options;
